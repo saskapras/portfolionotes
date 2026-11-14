@@ -1,0 +1,23 @@
+# === Stage 86: Add sample command transcripts for the main CLI workflows ===
+# Project: PortfolioNotes
+def sample_cli_transcripts():
+    print("=== PortfolioNotes CLI Samples ===\n")
+    print("$ python portfolio.py add --symbol AAPL --name Apple --qty 10 --cost 150.00")
+    print("$ python portfolio.py note --symbol AAPL --text 'Long-term hold, core position'")
+    print("$ python portfolio.py snapshot --symbol AAPL --price 175.25 --note 'Breakout above resistance'")
+    print("$ python portfolio.py remind --symbol AAPL --text 'Rebalance when up 20%'")
+    print("$ python portfolio.py list")
+    print("$ python portfolio.py show AAPL")
+    print("$ python portfolio.py reminders")
+    print("$ python portfolio.py history --symbol AAPL")
+    print("$ python portfolio.py report")
+    print()
+    print("# Workflow 1: Add a holding, then attach a note and price snapshot")
+    print("$ python portfolio.py add --symbol MSFT --name Microsoft --qty 5 --cost 300.00")
+    print("$ python portfolio.py note --symbol MSFT --text 'Cloud growth story'")
+    print("$ python portfolio.py snapshot --symbol MSFT --price 410.50")
+    print()
+    print("# Workflow 2: Set a reminder and review everything")
+    print("$ python portfolio.py remind --symbol MSFT --text 'Review quarterly earnings'")
+    print("$ python portfolio.py reminders")
+    print("$ python portfolio.py report")
